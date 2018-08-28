@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DF1AF716512DFDBDAA5AB37 /* Pods_ImagePick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C1857853E3769F7B0E5795 /* Pods_ImagePick.framework */; };
 		9B81DC8E2134FD7100A07C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81DC8D2134FD7100A07C7D /* AppDelegate.swift */; };
 		9B81DC902134FD7100A07C7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81DC8F2134FD7100A07C7D /* ViewController.swift */; };
 		9B81DC932134FD7100A07C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B81DC912134FD7100A07C7D /* Main.storyboard */; };
 		9B81DC952134FD7300A07C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B81DC942134FD7300A07C7D /* Assets.xcassets */; };
 		9B81DC982134FD7300A07C7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B81DC962134FD7300A07C7D /* LaunchScreen.storyboard */; };
+		9B81DCA121352A2000A07C7D /* ImagePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81DCA021352A2000A07C7D /* ImagePickViewController.swift */; };
+		9B81DCA321352CA900A07C7D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81DCA221352CA900A07C7D /* UIColor+Extension.swift */; };
+		9B81DCA5213533F000A07C7D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81DCA4213533F000A07C7D /* UIViewExtension.swift */; };
+		9B81DCA8213534B500A07C7D /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81DCA7213534B500A07C7D /* AlbumViewController.swift */; };
+		9B81DCAA213534C600A07C7D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81DCA9213534C600A07C7D /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7729471FD777023782FA5945 /* Pods-ImagePick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePick/Pods-ImagePick.debug.xcconfig"; sourceTree = "<group>"; };
 		9B81DC8A2134FD7100A07C7D /* ImagePick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B81DC8D2134FD7100A07C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B81DC8F2134FD7100A07C7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,13 @@
 		9B81DC942134FD7300A07C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B81DC972134FD7300A07C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B81DC992134FD7300A07C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B81DCA021352A2000A07C7D /* ImagePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickViewController.swift; sourceTree = "<group>"; };
+		9B81DCA221352CA900A07C7D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		9B81DCA4213533F000A07C7D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		9B81DCA7213534B500A07C7D /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		9B81DCA9213534C600A07C7D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A3C1857853E3769F7B0E5795 /* Pods_ImagePick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagePick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA47109B2AE21F88F621249A /* Pods-ImagePick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePick.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePick/Pods-ImagePick.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF1AF716512DFDBDAA5AB37 /* Pods_ImagePick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		227AAF32D2D20DB43BA60190 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7729471FD777023782FA5945 /* Pods-ImagePick.debug.xcconfig */,
+				EA47109B2AE21F88F621249A /* Pods-ImagePick.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D61762B5F6DFEF33A2E38C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3C1857853E3769F7B0E5795 /* Pods_ImagePick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B81DC812134FD7100A07C7D = {
 			isa = PBXGroup;
 			children = (
 				9B81DC8C2134FD7100A07C7D /* ImagePick */,
 				9B81DC8B2134FD7100A07C7D /* Products */,
+				227AAF32D2D20DB43BA60190 /* Pods */,
+				5D61762B5F6DFEF33A2E38C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +88,7 @@
 		9B81DC8C2134FD7100A07C7D /* ImagePick */ = {
 			isa = PBXGroup;
 			children = (
+				9B81DC9F213527D400A07C7D /* ImagePick */,
 				9B81DC8D2134FD7100A07C7D /* AppDelegate.swift */,
 				9B81DC8F2134FD7100A07C7D /* ViewController.swift */,
 				9B81DC912134FD7100A07C7D /* Main.storyboard */,
@@ -64,6 +99,26 @@
 			path = ImagePick;
 			sourceTree = "<group>";
 		};
+		9B81DC9F213527D400A07C7D /* ImagePick */ = {
+			isa = PBXGroup;
+			children = (
+				9B81DCA62135340600A07C7D /* Tool */,
+				9B81DCA021352A2000A07C7D /* ImagePickViewController.swift */,
+				9B81DCA7213534B500A07C7D /* AlbumViewController.swift */,
+				9B81DCA9213534C600A07C7D /* CameraViewController.swift */,
+			);
+			path = ImagePick;
+			sourceTree = "<group>";
+		};
+		9B81DCA62135340600A07C7D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				9B81DCA4213533F000A07C7D /* UIViewExtension.swift */,
+				9B81DCA221352CA900A07C7D /* UIColor+Extension.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B81DC9C2134FD7300A07C7D /* Build configuration list for PBXNativeTarget "ImagePick" */;
 			buildPhases = (
+				8FDBA30BB15E3FD95DFB8DA0 /* [CP] Check Pods Manifest.lock */,
 				9B81DC862134FD7100A07C7D /* Sources */,
 				9B81DC872134FD7100A07C7D /* Frameworks */,
 				9B81DC882134FD7100A07C7D /* Resources */,
+				33CA465C3E12352063801E8E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +187,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33CA465C3E12352063801E8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ImagePick/Pods-ImagePick-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImagePick/Pods-ImagePick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FDBA30BB15E3FD95DFB8DA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImagePick-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B81DC862134FD7100A07C7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B81DCA8213534B500A07C7D /* AlbumViewController.swift in Sources */,
+				9B81DCA5213533F000A07C7D /* UIViewExtension.swift in Sources */,
 				9B81DC902134FD7100A07C7D /* ViewController.swift in Sources */,
+				9B81DCA121352A2000A07C7D /* ImagePickViewController.swift in Sources */,
+				9B81DCAA213534C600A07C7D /* CameraViewController.swift in Sources */,
 				9B81DC8E2134FD7100A07C7D /* AppDelegate.swift in Sources */,
+				9B81DCA321352CA900A07C7D /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +379,13 @@
 		};
 		9B81DC9D2134FD7300A07C7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7729471FD777023782FA5945 /* Pods-ImagePick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47W28PSMV7;
 				INFOPLIST_FILE = ImagePick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +399,13 @@
 		};
 		9B81DC9E2134FD7300A07C7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA47109B2AE21F88F621249A /* Pods-ImagePick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47W28PSMV7;
 				INFOPLIST_FILE = ImagePick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
