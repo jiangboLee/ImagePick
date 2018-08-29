@@ -18,7 +18,7 @@ class ImagePickViewController: UIViewController {
         backScrollView.bounces = false
         backScrollView.showsVerticalScrollIndicator = false
         backScrollView.showsHorizontalScrollIndicator = false
-//        backScrollView.isScrollEnabled = false
+        backScrollView.isScrollEnabled = false
         backScrollView.isPagingEnabled = true
         view.addSubview(backScrollView)
         backScrollView.snp.makeConstraints({ (make) in
@@ -80,6 +80,8 @@ class ImagePickViewController: UIViewController {
         let cameraVc = CameraViewController()
         albumVc.view.frame = CGRect(origin: .zero, size: backScrollView.size)
         cameraVc.view.frame = CGRect(x: backScrollView.width, y: 0, width: backScrollView.width, height: backScrollView.height)
+        addChildViewController(albumVc)
+        addChildViewController(cameraVc)
         backScrollView.addSubview(albumVc.view)
         backScrollView.addSubview(cameraVc.view)
         
