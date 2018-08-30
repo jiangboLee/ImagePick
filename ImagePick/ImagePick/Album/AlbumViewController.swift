@@ -12,10 +12,12 @@ import Photos
 
 class AlbumViewController: UIViewController {
     
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var topViewHeight: NSLayoutConstraint!
     
     private let cellId = "AlbumFinderTableViewCell"
     lazy var photoTableView: UITableView = {
-        let photoTableView = UITableView(frame: CGRect(x: 0, y: NavigationBarHeight, width: SCREEN_WIDTH, height:SCREEN_HEIGHT - NavigationBarHeight))
+        let photoTableView = UITableView(frame: CGRect(x: 0, y: NavigationBarHeight, width: SCREEN_WIDTH, height: 0))
         photoTableView.backgroundColor = UIColor.black
         photoTableView.showsVerticalScrollIndicator = false
         photoTableView.showsHorizontalScrollIndicator = false
@@ -38,7 +40,10 @@ class AlbumViewController: UIViewController {
     }
     
     func setupUI() {
+        
         view.backgroundColor = UIColor.white
+        topViewHeight.constant = NavigationBarHeight
+        
         PHPhotoLibrary.requestAuthorization { [weak self] (status) in
             guard let `self` = self else {return}
             switch status {
@@ -73,6 +78,21 @@ class AlbumViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func photoListClick(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        if sender.isSelected {
+            UIView.animate(withDuration: 0.2) {
+                self.photoTableView.frame = CGRect(x: 0, y: NavigationBarHeight, width: SCREEN_WIDTH, height:SCREEN_HEIGHT - NavigationBarHeight)
+            }
+        } else {
+            UIView.animate(withDuration: 0.2) {
+                self.photoTableView.frame = CGRect(x: 0, y: NavigationBarHeight, width: SCREEN_WIDTH, height: 0)
+            }
+        }
+    }
+    
+    
 }
 
 extension AlbumViewController: UITableViewDelegate, UITableViewDataSource {
@@ -94,7 +114,7 @@ extension AlbumViewController: UITableViewDelegate, UITableViewDataSource {
                 print(info ?? "")
                 cell?.converImageV.image = image
             })
-            cell?.titleLabel.text = "全部照片"
+            cell?.titleLabel.text = "相机胶卷"
             cell?.photoNumLabel.text = "\(assetsFetchResults?.count ?? 0) photos"
         } else {
             guard let assetCollection = collectionArrr![indexPath.row - 1] as? PHAssetCollection  else {return UITableViewCell()}

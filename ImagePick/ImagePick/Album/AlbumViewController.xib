@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlbumViewController" customModule="ImagePick" customModuleProvider="target">
+            <connections>
+                <outlet property="topView" destination="BbG-Xx-bEF" id="BfF-rW-Q6U"/>
+                <outlet property="topViewHeight" destination="l2U-cv-7iJ" id="trb-6N-k0R"/>
+                <outlet property="view" destination="vzV-FG-aap" id="dBt-xh-kEi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vzV-FG-aap">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BbG-Xx-bEF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNf-8f-xJl">
+                            <rect key="frame" x="154" y="34" width="66" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="相机胶卷">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="photoListClick:" destination="-1" eventType="touchUpInside" id="uI4-HP-akk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottomMargin" secondItem="RNf-8f-xJl" secondAttribute="bottom" constant="10" id="DcH-xy-Iej"/>
+                        <constraint firstItem="RNf-8f-xJl" firstAttribute="centerX" secondItem="BbG-Xx-bEF" secondAttribute="centerX" id="cuk-5s-c55"/>
+                        <constraint firstAttribute="height" constant="84" id="l2U-cv-7iJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BbG-Xx-bEF" firstAttribute="leading" secondItem="vzV-FG-aap" secondAttribute="leading" id="2AD-Lg-SYW"/>
+                <constraint firstItem="BbG-Xx-bEF" firstAttribute="top" secondItem="vzV-FG-aap" secondAttribute="top" id="JvU-jC-raf"/>
+                <constraint firstAttribute="trailing" secondItem="BbG-Xx-bEF" secondAttribute="trailing" id="ZHa-cp-Vns"/>
+            </constraints>
+            <point key="canvasLocation" x="540" y="34"/>
+        </view>
+    </objects>
+</document>
